@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>resume</title>
+
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
+        <link href="http://fonts.googleapis.com/css?family=Armata" rel="stylesheet" type="text/css">
+        
+        <link href="dist/css/jquery.gridder.min.css" rel="stylesheet">
+        <link href="scss/jquery.gridder.css" rel="stylesheet">
+        <link href="demo/css/demo.css" rel="stylesheet">
+        <link rel="stylesheet" href="../assets/css/atlas-typewriter/atlas-typewriter-web-regular.css">
+    </head>
+    <body>
+
+        <div class="container header">
+            <h1 style="font-family: normal 0.75em/1 'Atlas Typewriter', 'Consolas', monospace; 
+">resume</h1>
+		</div>
+
+		<div class="container">
+			<div class="row">
+                <div class="col-xs-12 col-sm-6 col-sm-offset-1">
+                    <strong>Experience</strong>
+                        <br>
+                        <br>
+
+                    <strong>Ation - Project Manager</strong>
+                    <br>
+                    <em>Shelf.io Web Application User Testing</em>
+                    <br>
+                    <em>January 2016 - Present</em>
+                    <br>
+                    <ul>
+                        <li>User Testing the Shelf.io Web Application</li>
+                        <li>Contact with company owners</li>
+                        <li>Managing timetables/meeting deadlines</li>
+                    </ul>
+                    <br>
+                    <strong>Uconn Athletics Video Production</strong>
+                    <br>
+                    <em>Video Production</em>
+                    <br>
+                    <em>October 2016 - Present</em>
+                    <br>
+                <ul>
+                    <li>Editing Game footage</li>
+                    <li>Creating animations and graphics for athletics projects</li>
+                </ul>
+                    <br>
+                    <strong>Collective (Owner), Apparel / Design</strong>
+                    <br>
+                    <em>August 2016 - Present</em>
+                    <br>
+                <ul>
+                    <li>Managed creative design</li>
+                    <li>Photo and video editing</li>
+                    <li>Multiple Social Media Accounts </li>
+                    <li>Managed finances</li>
+                    <li>Bookkeeping</li>
+                </ul>
+                <br>
+
+                    <strong>Freelance Graphic Design and Film</strong>
+                    <br>
+                    <em>December 2015 - Present</em>
+                <ul>
+                    <li>Music cover art</li>
+                    <li>Brand logos and social media marketing materials</li>
+                    <li>Filming content for social media</li>
+
+                </ul>
+                    <br>
+                    <strong>Education</strong>
+                    <br>
+                    <em>University of Connecticut</em>
+                    <br>
+                    <em>August 2015 - Present</em>
+                    <br>
+                    <em>Bachelor of Arts - Digital Media and Design</em>
+                    
+                </div>
+
+                <div class="col-xs-12 col-sm-3">
+                    <strong>Skills</strong>
+                    <br>
+                    <br>
+                    <ul>
+                    <li>-Adobe After Effects</li> 
+                    <li>-Adobe Photoshop</li> 
+                    <li>-Adobe Premiere</li> 
+                    <li>-Adobe Illustrator</li> 
+                    <li>-Adobe InDesign</li> 
+                    <li>-Adobe Audition</li> 
+                    <li>-HTML</li>
+                    <li>-CSS</li>
+                    <li>-Responsive Web Design (Bootstrap, FlexBox)</li>
+                    </ul>
+                </div>
+            </div>
+
+		</div>
+
+
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+        <script src="dist/js/jquery.gridder.js"></script>
+        <script>
+            jQuery(document).ready(function ($) {
+
+                // Call Gridder
+                $(".gridder").gridderExpander({
+                    scrollOffset: 60,
+                    scrollTo: "panel", // "panel" or "listitem"
+                    animationSpeed: 400,
+                    animationEasing: "easeInOutExpo",
+                    onStart: function () {
+                        console.log("Gridder Inititialized");
+                    },
+                    onExpanded: function (object) {
+                        console.log("Gridder Expanded");
+                        $(".carousel").carousel();
+                    },
+                    onChanged: function (object) {
+                        console.log("Gridder Changed");
+                    },
+                    onClosed: function () {
+                        console.log("Gridder Closed");
+                    }
+                });
+            });
+        </script>
+    </body>
+</html>
