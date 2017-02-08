@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>resume</title>
+
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
+        <link href="http://fonts.googleapis.com/css?family=Armata" rel="stylesheet" type="text/css">
+        
+        <link href="dist/css/jquery.gridder.min.css" rel="stylesheet">
+        <link href="scss/jquery.gridder.css" rel="stylesheet">
+        <link href="demo/css/demo.css" rel="stylesheet">
+        <link rel="stylesheet" href="../assets/css/atlas-typewriter/atlas-typewriter-web-regular.css">
+    </head>
+    <body>
+
+        <div class="container header">
+            <h1 style="font-family: normal 0.75em/1 'Atlas Typewriter', 'Consolas', monospace; 
+">resume</h1>
+		</div>
+
+		<div class="container">
+			<div class="row">
+                <div class="col-xs-12 col-sm-6 col-sm-offset-3">
+                    <strong>about myself</strong>
+                    <br>
+                    <br>
+
+                     <p style="line-height: 2; ">Hi, I'm Danny.  As of now I am 20 years old and currently a student at the University of Connecticut majoring in Digital Media and Design.  I am a huge fan of hip-hop, graphic design, Rick and Morty, and recently investment and Facebook/Instagram Advertising.</p>
+                     <p style="line-height: 2; ">My favorite book is Catch 22, favorite movie(s) are Kill Bill Volume 1 & 2.  No favorite musician because I listen to everything from Isaiah Rashad to Ghost B.C. to Mazzy Star.
+                    </p>
+                </div>
+            </div>
+
+		</div>
+
+
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+        <script src="dist/js/jquery.gridder.js"></script>
+        <script>
+            jQuery(document).ready(function ($) {
+
+                // Call Gridder
+                $(".gridder").gridderExpander({
+                    scrollOffset: 60,
+                    scrollTo: "panel", // "panel" or "listitem"
+                    animationSpeed: 400,
+                    animationEasing: "easeInOutExpo",
+                    onStart: function () {
+                        console.log("Gridder Inititialized");
+                    },
+                    onExpanded: function (object) {
+                        console.log("Gridder Expanded");
+                        $(".carousel").carousel();
+                    },
+                    onChanged: function (object) {
+                        console.log("Gridder Changed");
+                    },
+                    onClosed: function () {
+                        console.log("Gridder Closed");
+                    }
+                });
+            });
+        </script>
+    </body>
+</html>
